@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    const path = '/users/download/index.html' //строка для проверки
+
+    const isHtml = path => { // создаем функцию 
+      const requiredEnd = '.html'; // в которую кидаем переменную с необходимым окончанием
+      const pathEnd = path.slice(-5);//переменая в которой"слайс" находит эту функцию -5 символов от конца строки
+
+      if (pathEnd == requiredEnd) {return true} // и пишем шо если окончание строки равно необходимиму нам окончинию,то true\false
+                                                                        //pathEnd                 //requiredEnd
+      else  { return false }                                        
+    } 
+
+    console.log(isHtml(path)); //выводим в консоль переменнуд с функцией в которой генерится true\false
+  </script>
+</body>
+</html>

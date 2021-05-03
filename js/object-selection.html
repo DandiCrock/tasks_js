@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+const workers = [           
+      {name:"John",salary:"500"},
+      {name:"Mike",salary:"1300"},
+      {name:"Linda",salary:"1500"}
+];
+
+
+const getworthyWorkers = workers => {    
+      const worthyWorkers = [];
+
+    for (let i=0; i < workers.length; i++) {
+      if (workers[i].salary > 1000) {
+        worthyWorkers.push(workers[i].name);
+      }
+    }
+    return worthyWorkers;
+}
+      
+    
+console.log (getworthyWorkers(workers));
+
+  </script>
+</body>
+</html>
